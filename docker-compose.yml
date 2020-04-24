@@ -1,16 +1,13 @@
 version: '3'
 services:
     api:
-<<<<<<< HEAD
+
         image: 305764/img:latest
-=======
-        #image: 305764/test:latest
-        image: myregistry.local:5000/test:latest
->>>>>>> 171c154... refactorisation source
+        #image: myregistry.local:5000/test:latest
         volumes:
             - ./simple_api/student_age.json:/data/student_age.json
         ports:
-            - 3000:5000
+            - 5000:5000
 
     website:
         image: php:apache

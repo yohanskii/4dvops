@@ -32,7 +32,7 @@
         volumes:
           - "/root/simple_api/student_age.json:/data/student_age.json"
         ports:
-          - "3000:5000"
+          - "5000:5000"
 
     - name: Deploy website
       docker_container:
@@ -40,7 +40,6 @@
         hostname: website
         image: php:apache
         state: started
-        dns: 8.8.8.8
         volumes:
           - "/root/website/index.php:/var/www/html/index.php"
         env:
