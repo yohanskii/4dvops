@@ -25,11 +25,9 @@
       docker_container:
         name: api
         hostname: api
-<<<<<<< HEAD:4dvop-app.yml
+
         image: 305764/img:latest
-=======
-        image: myregistry.local:5000/test:latest
->>>>>>> 171c154... refactorisation source:ansible-playbook.yml
+        #image: myregistry.local:5000/test:latest
         state: started
         volumes:
           - "/root/simple_api/student_age.json:/data/student_age.json"
